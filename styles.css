@@ -31,7 +31,11 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.7;
@@ -146,7 +150,9 @@ img {
   color: #fff !important;
   padding: 8px 20px;
   border-radius: var(--radius-sm);
-  transition: background var(--transition), transform var(--transition);
+  transition:
+    background var(--transition),
+    transform var(--transition);
 }
 
 .nav-cta:hover {
@@ -180,7 +186,11 @@ img {
   padding-top: 64px;
   background:
     radial-gradient(ellipse at 20% 50%, var(--accent-glow), transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(99, 102, 241, 0.08), transparent 50%),
+    radial-gradient(
+      ellipse at 80% 20%,
+      rgba(99, 102, 241, 0.08),
+      transparent 50%
+    ),
     var(--bg-primary);
 }
 
@@ -265,7 +275,9 @@ img {
 
 .hero-links a {
   color: var(--text-muted);
-  transition: color var(--transition), transform var(--transition);
+  transition:
+    color var(--transition),
+    transform var(--transition);
 }
 
 .hero-links a:hover {
@@ -300,7 +312,9 @@ img {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
-  transition: border-color var(--transition), transform var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition);
 }
 
 .skill-card:hover {
@@ -343,7 +357,10 @@ img {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
-  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
 }
 
 .project-card:hover {
@@ -481,7 +498,9 @@ img {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
-  transition: border-color var(--transition), transform var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition);
 }
 
 .edu-card:hover {
@@ -542,7 +561,10 @@ img {
   border-radius: var(--radius);
   padding: 20px 24px;
   color: var(--text-secondary);
-  transition: border-color var(--transition), transform var(--transition), color var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    color var(--transition);
 }
 
 .contact-card:hover {
@@ -712,7 +734,9 @@ img {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
-  transition: border-color var(--transition), transform var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition);
 }
 
 .process-step:hover {
@@ -832,7 +856,9 @@ img {
   display: flex;
   flex-direction: column;
   gap: 0;
-  transition: border-color var(--transition), transform var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition);
   position: relative;
 }
 
@@ -1043,7 +1069,9 @@ img {
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 .fade-in.visible {
@@ -1075,7 +1103,9 @@ img {
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
-    transition: transform var(--transition), opacity var(--transition);
+    transition:
+      transform var(--transition),
+      opacity var(--transition);
   }
 
   .nav-links.open {
