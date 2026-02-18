@@ -29,9 +29,11 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Apply fade-in to section content (updated selectors for new sections)
 document.querySelectorAll(
-  '.about-content, .skill-card, .project-card, .timeline-item, .edu-card, .contact-card, .contact-intro, .case-study-card, .process-step, .section-subtitle'
+  '.about-content, .skill-card, .project-card, .timeline-item, .edu-card, ' +
+  '.contact-card, .contact-intro, .case-study-card, .process-step, ' +
+  '.section-subtitle, .pricing-card, .intake-form, .hero-call-benefits, ' +
+  '.hero-credibility, .contact-or'
 ).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
@@ -58,3 +60,30 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// Intake form — mailto handler
+const intakeForm = document.getElementById('intake-form');
+if (intakeForm) {
+  intakeForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name  = document.getElementById('intake-name').value.trim();
+    const org   = document.getElementById('intake-org').value.trim();
+    const email = document.getElementById('intake-email').value.trim();
+    const goal  = document.getElementById('intake-goal').value.trim();
+
+    if (!name || !org || !email || !goal) return;
+
+    const subject = encodeURIComponent(`AI Consultation Request — ${org}`);
+    const body = encodeURIComponent(
+      `Hi Niv,\n\nI'd like to book a free AI efficiency consultation.\n\n` +
+      `Name: ${name}\n` +
+      `Organization: ${org}\n` +
+      `Email: ${email}\n\n` +
+      `What I'm trying to improve:\n${goal}\n\n` +
+      `Looking forward to connecting!`
+    );
+
+    window.location.href = `mailto:ncaduri@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
