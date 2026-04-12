@@ -33,8 +33,8 @@ document
   .querySelectorAll(
     '.about-content, .skill-card, .project-card, .timeline-item, .edu-card, ' +
       '.contact-card, .contact-intro, .case-study-card, .process-step, ' +
-      '.section-subtitle, .pricing-card, .intake-form, .hero-call-benefits, ' +
-      '.hero-credibility, .contact-or',
+      '.section-subtitle, .pricing-card, .intake-form, .hero-credibility, ' +
+      '.contact-or, .who-card',
   )
   .forEach((el) => {
     el.classList.add('fade-in');
@@ -76,7 +76,7 @@ if (intakeForm) {
 
     if (!name || !org || !email || !goal) return;
 
-    const subject = encodeURIComponent(`AI Consultation Request — ${org}`);
+    const subject = encodeURIComponent(`AI Project Inquiry — ${org}`);
     const body = encodeURIComponent(
       `Hi Niv,\n\nI'd like to book a free AI efficiency consultation.\n\n` +
         `Name: ${name}\n` +

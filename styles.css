@@ -285,6 +285,15 @@ img {
   transform: translateY(-2px);
 }
 
+/* ===== Hero Title Subtitle ===== */
+.hero-title {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+
 /* ===== About ===== */
 .about-content {
   max-width: 720px;
